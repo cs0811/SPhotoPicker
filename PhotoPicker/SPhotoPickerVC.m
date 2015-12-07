@@ -37,7 +37,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.automaticallyAdjustsScrollViewInsets = false;
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = RGB(240, 240, 240);
     self.navigationItem.title = @"选取图片";
     
     
@@ -250,7 +250,6 @@
         }
     }
     
-    
     lastCell = (SPhotoPickerCollectionViewCell *)sender.superview;
 }
 
@@ -270,10 +269,15 @@
 
 #pragma mark - enSureClick
 - (void)enSureClick:(UIButton *)sender {
-    NSLog(@"选择结束");
-    NSLog(@"%@",returnArr);
-    
     // 回传选中的image
+    self.selectedImgsBlock(returnArr);
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)dealloc {
+    _showCollection.delegate = nil;
+    _showCollection.dataSource = nil;
 }
 
 - (void)didReceiveMemoryWarning {

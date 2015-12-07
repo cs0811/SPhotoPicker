@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^SelectedImgsBlock)(NSArray *imgsArray);
+
 @interface SPhotoPickerVC : UIViewController
 
 /**
  只选一张图
  */
 @property(nonatomic,assign) BOOL oneImageSelect;
+@property(nonatomic,strong) SelectedImgsBlock selectedImgsBlock;
 
 @end

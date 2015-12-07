@@ -17,6 +17,7 @@
 		12A6E1FA1C152B5400CB70FD /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A6E1ED1C152B5400CB70FD /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		12A6E1FB1C152B5400CB70FD /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A6E1EF1C152B5400CB70FD /* View+MASAdditions.m */; };
 		12A6E1FC1C152B5400CB70FD /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A6E1F21C152B5400CB70FD /* ViewController+MASAdditions.m */; };
+		12A6E1FF1C15810D00CB70FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A6E1FE1C15810D00CB70FD /* ViewController.m */; };
 		12F0D14A1BF9CFD3005A2F45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0D1491BF9CFD3005A2F45 /* main.m */; };
 		12F0D14D1BF9CFD3005A2F45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0D14C1BF9CFD3005A2F45 /* AppDelegate.m */; };
 		12F0D1531BF9CFD3005A2F45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F0D1511BF9CFD3005A2F45 /* Main.storyboard */; };
@@ -63,6 +64,8 @@
 		12A6E1F01C152B5400CB70FD /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		12A6E1F11C152B5400CB70FD /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		12A6E1F21C152B5400CB70FD /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		12A6E1FD1C15810D00CB70FD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		12A6E1FE1C15810D00CB70FD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		12F0D1451BF9CFD3005A2F45 /* PhotoPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F0D1491BF9CFD3005A2F45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		12F0D14B1BF9CFD3005A2F45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -154,6 +157,8 @@
 				12A6E1D91C152B5400CB70FD /* Masonry */,
 				12F0D14B1BF9CFD3005A2F45 /* AppDelegate.h */,
 				12F0D14C1BF9CFD3005A2F45 /* AppDelegate.m */,
+				12A6E1FD1C15810D00CB70FD /* ViewController.h */,
+				12A6E1FE1C15810D00CB70FD /* ViewController.m */,
 				12F0D1791BF9D7E4005A2F45 /* SPhotoPickerVC.h */,
 				12F0D17A1BF9D7E4005A2F45 /* SPhotoPickerVC.m */,
 				12F0D1731BF9D288005A2F45 /* SPhotoPickerCollectionViewCell.h */,
@@ -293,6 +298,7 @@
 				12A6E1F91C152B5400CB70FD /* NSArray+MASAdditions.m in Sources */,
 				12A6E1F81C152B5400CB70FD /* MASViewConstraint.m in Sources */,
 				12A6E1F71C152B5400CB70FD /* MASViewAttribute.m in Sources */,
+				12A6E1FF1C15810D00CB70FD /* ViewController.m in Sources */,
 				12A6E1FB1C152B5400CB70FD /* View+MASAdditions.m in Sources */,
 				12F0D14D1BF9CFD3005A2F45 /* AppDelegate.m in Sources */,
 				12F0D14A1BF9CFD3005A2F45 /* main.m in Sources */,
