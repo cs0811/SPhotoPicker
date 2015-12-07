@@ -4,7 +4,7 @@
 ##接入
     SPhotoPickerVC * photo = [[SPhotoPickerVC alloc] init];
     // 只选一张图
-//    photo.oneImageSelect = YES;
+    //    photo.oneImageSelect = YES;
     
     photo.selectedImgsBlock = ^(NSArray *imgsArray) {
         NSLog(@"%@",imgsArray);
@@ -14,4 +14,4 @@
     
     [self.navigationController pushViewController:photo animated:YES];
 
-![image](https://github.com/YourAcountName/ProjectName/blob/master/GIFName.gif ) 
+![image](https://github.com/cs0811/SPhotoPicker/blob/master/SPhotoPickerGif.gif) 
