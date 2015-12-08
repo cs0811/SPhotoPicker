@@ -53,7 +53,7 @@
     // 如果没有获取访问授权，或者访问授权状态已经被明确禁止，则显示提示语，引导用户开启授权
     if (authorizationStatus == ALAuthorizationStatusRestricted || authorizationStatus == ALAuthorizationStatusDenied) {
         NSDictionary *mainInfoDictionary = [[NSBundle mainBundle] infoDictionary];
-        NSString *appName = [mainInfoDictionary objectForKey:@"CFBundleDisplayName"];
+        NSString *appName = [mainInfoDictionary objectForKey:@"CFBundleName"];
         tipTextWhenNoPhotosAuthorization = [NSString stringWithFormat:@"请在设备的\"设置-隐私-照片\"选项中，允许%@访问你的手机相册", appName];
         // 展示提示语
         UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"提示" message:tipTextWhenNoPhotosAuthorization delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
@@ -143,7 +143,6 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 1) {
         NSURL * url = [NSURL URLWithString:[NSString stringWithFormat:@"prefs:root=Privacy"]];
-        
         if([[UIApplication sharedApplication] canOpenURL:url]) {
             [[UIApplication sharedApplication] openURL:url];
         }
